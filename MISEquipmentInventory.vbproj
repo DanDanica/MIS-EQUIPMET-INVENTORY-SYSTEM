@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15C2BA02-6648-440E-A781-DA4B744C680B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MISEquipmentInventory.My.MyApplication</StartupObject>
+    <RootNamespace>MISEquipmentInventory</RootNamespace>
+    <AssemblyName>MISEquipmentInventory</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MISEquipmentInventory.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MISEquipmentInventory.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessoriesAvailability.Designer.vb">
+      <DependentUpon>AccessoriesAvailability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccessoriesAvailability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.vb">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLoginForm.Designer.vb">
+      <DependentUpon>AdminLoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddItem.Designer.vb">
+      <DependentUpon>Admin_AddItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddItemAccessories.Designer.vb">
+      <DependentUpon>Admin_AddItemAccessories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddItemAccessories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddItemClassrooms.Designer.vb">
+      <DependentUpon>Admin_AddItemClassrooms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddItemClassrooms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddItemCleaningMaterials.Designer.vb">
+      <DependentUpon>Admin_AddItemCleaningMaterials.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddItemCleaningMaterials.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_DeleteItem.Designer.vb">
+      <DependentUpon>Admin_DeleteItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_DeleteItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_DeleteItemAccessories.Designer.vb">
+      <DependentUpon>Admin_DeleteItemAccessories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_DeleteItemAccessories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_DeleteItemClassrooms.Designer.vb">
+      <DependentUpon>Admin_DeleteItemClassrooms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_DeleteItemClassrooms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_DeleteItemCleaning.Designer.vb">
+      <DependentUpon>Admin_DeleteItemCleaning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_DeleteItemCleaning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdateItem.Designer.vb">
+      <DependentUpon>Admin_UpdateItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UpdateItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdateItemAccessories.Designer.vb">
+      <DependentUpon>Admin_UpdateItemAccessories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UpdateItemAccessories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdateItemClassrooms.Designer.vb">
+      <DependentUpon>Admin_UpdateItemClassrooms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UpdateItemClassrooms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdateItemCleaning.Designer.vb">
+      <DependentUpon>Admin_UpdateItemCleaning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UpdateItemCleaning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdatePayment.Designer.vb">
+      <DependentUpon>Admin_UpdatePayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UpdatePayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassroomsAvailability.Designer.vb">
+      <DependentUpon>ClassroomsAvailability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClassroomsAvailability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CleaningMaterialsAvailability.Designer.vb">
+      <DependentUpon>CleaningMaterialsAvailability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CleaningMaterialsAvailability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard2.Designer.vb">
+      <DependentUpon>Dashboard2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElectronicsAvailability.Designer.vb">
+      <DependentUpon>ElectronicsAvailability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ElectronicsAvailability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LetterNotice.Designer.vb">
+      <DependentUpon>LetterNotice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LetterNotice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogoutConfirmation.Designer.vb">
+      <DependentUpon>LogoutConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogoutConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Notice.Designer.vb">
+      <DependentUpon>Notice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfBorrowForm.Designer.vb">
+      <DependentUpon>ProfBorrowForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfBorrowForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfClassroomBorrowingConfirmation.Designer.vb">
+      <DependentUpon>ProfClassroomBorrowingConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfClassroomBorrowingConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prof_BorrowingConfirmation.Designer.vb">
+      <DependentUpon>Prof_BorrowingConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prof_BorrowingConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.vb">
+      <DependentUpon>Signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartingForm.Designer.vb">
+      <DependentUpon>StartingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StartingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin_AddNewUser.Designer.vb">
+      <DependentUpon>SuperAdmin_AddNewUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin_AddNewUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin_Dashboard.Designer.vb">
+      <DependentUpon>SuperAdmin_Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin_Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin_UpdateAdminAccount.Designer.vb">
+      <DependentUpon>SuperAdmin_UpdateAdminAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin_UpdateAdminAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin_UpdateUserAccount.Designer.vb">
+      <DependentUpon>SuperAdmin_UpdateUserAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin_UpdateUserAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermsAndAgreementClassroom.Designer.vb">
+      <DependentUpon>TermsAndAgreementClassroom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TermsAndAgreementClassroom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermsAndAgreementForm.Designer.vb">
+      <DependentUpon>TermsAndAgreementForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TermsAndAgreementForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_BorrowingClassroomConfirmation.Designer.vb">
+      <DependentUpon>User_BorrowingClassroomConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User_BorrowingClassroomConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_BorrowingConfirmationForm.Designer.vb">
+      <DependentUpon>User_BorrowingConfirmationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User_BorrowingConfirmationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccessoriesAvailability.resx">
+      <DependentUpon>AccessoriesAvailability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoginForm.resx">
+      <DependentUpon>AdminLoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AddItem.resx">
+      <DependentUpon>Admin_AddItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AddItemAccessories.resx">
+      <DependentUpon>Admin_AddItemAccessories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AddItemClassrooms.resx">
+      <DependentUpon>Admin_AddItemClassrooms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AddItemCleaningMaterials.resx">
+      <DependentUpon>Admin_AddItemCleaningMaterials.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_DeleteItem.resx">
+      <DependentUpon>Admin_DeleteItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_DeleteItemAccessories.resx">
+      <DependentUpon>Admin_DeleteItemAccessories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_DeleteItemClassrooms.resx">
+      <DependentUpon>Admin_DeleteItemClassrooms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_DeleteItemCleaning.resx">
+      <DependentUpon>Admin_DeleteItemCleaning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UpdateItem.resx">
+      <DependentUpon>Admin_UpdateItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UpdateItemAccessories.resx">
+      <DependentUpon>Admin_UpdateItemAccessories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UpdateItemClassrooms.resx">
+      <DependentUpon>Admin_UpdateItemClassrooms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UpdateItemCleaning.resx">
+      <DependentUpon>Admin_UpdateItemCleaning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UpdatePayment.resx">
+      <DependentUpon>Admin_UpdatePayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassroomsAvailability.resx">
+      <DependentUpon>ClassroomsAvailability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CleaningMaterialsAvailability.resx">
+      <DependentUpon>CleaningMaterialsAvailability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard2.resx">
+      <DependentUpon>Dashboard2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElectronicsAvailability.resx">
+      <DependentUpon>ElectronicsAvailability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LetterNotice.resx">
+      <DependentUpon>LetterNotice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoutConfirmation.resx">
+      <DependentUpon>LogoutConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice.resx">
+      <DependentUpon>Notice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfBorrowForm.resx">
+      <DependentUpon>ProfBorrowForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfClassroomBorrowingConfirmation.resx">
+      <DependentUpon>ProfClassroomBorrowingConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prof_BorrowingConfirmation.resx">
+      <DependentUpon>Prof_BorrowingConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartingForm.resx">
+      <DependentUpon>StartingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperAdmin_AddNewUser.resx">
+      <DependentUpon>SuperAdmin_AddNewUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperAdmin_Dashboard.resx">
+      <DependentUpon>SuperAdmin_Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperAdmin_UpdateAdminAccount.resx">
+      <DependentUpon>SuperAdmin_UpdateAdminAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperAdmin_UpdateUserAccount.resx">
+      <DependentUpon>SuperAdmin_UpdateUserAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TermsAndAgreementClassroom.resx">
+      <DependentUpon>TermsAndAgreementClassroom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TermsAndAgreementForm.resx">
+      <DependentUpon>TermsAndAgreementForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_BorrowingClassroomConfirmation.resx">
+      <DependentUpon>User_BorrowingClassroomConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_BorrowingConfirmationForm.resx">
+      <DependentUpon>User_BorrowingConfirmationForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="LoginDataSet.xsc">
+      <DependentUpon>LoginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataSet.xss">
+      <DependentUpon>LoginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backs.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,41 @@
+﻿Imports System.Data.OleDb
+
+Public Class ElectronicsAvailability
+    Private Sub ElectronicsAvailability_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        connection.Close()
+        connection.Open()
+        ' MsgBox("Open")
+        Dim da1 As New OleDbDataAdapter("SELECT ID, Equipments, Condition, Cost, Availability FROM tbl_Electronics", connection)
+        Dim dTable As New DataTable
+        da1.Fill(dTable)
+        dgv_UserElectronics.DataSource = dTable.DefaultView
+        connection.Close()
+
+        Timer1.Enabled = True 'NEED THIS!!
+
+    End Sub
+
+    Private Sub btn_Back_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_Back.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btn_ProfBorrow_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_ProfBorrow.Click
+        Prof_BorrowingConfirmation.txtbox_StudentNumber.Text = dgv_UserElectronics.CurrentRow.Cells(0).Value.ToString
+        Prof_BorrowingConfirmation.txtbox_ItemBorrow.Text = dgv_UserElectronics.CurrentRow.Cells(1).Value.ToString
+        Prof_BorrowingConfirmation.txtbox_Condition.Text = dgv_UserElectronics.CurrentRow.Cells(2).Value.ToString
+        Prof_BorrowingConfirmation.txtbox_Availability.Text = dgv_UserElectronics.CurrentRow.Cells(4).Value.ToString
+        Prof_BorrowingConfirmation.Show()
+    End Sub
+
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        lblDate.Text = Date.Now.ToString("MM-dd-yyyy")
+        lblTime.Text = Date.Now.ToString("hh:mm:ss")
+        StoreTime = lblTime.Text ' STORE DATE TO THIS GLOBAL VARIABLE
+        StoreDate = lblDate.Text ' STORE TIME TO THIS GLOBAL VARIABLE
+    End Sub
+
+    Private Sub btn_Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_Cancel.Click
+        Me.Close()
+        ProfBorrowForm.Show()
+    End Sub
+End Class
